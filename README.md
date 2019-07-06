@@ -89,3 +89,8 @@ Reste donc à calculer les meilleurs temps pour chaque distance et chaque utilis
 * Envoyez le lien avec le projet à recrutement@stadline.com.
 
 Bonne chance !
+
+
+TIME :
+- 30 min install env
+- 30 min install FOSUserBundle
