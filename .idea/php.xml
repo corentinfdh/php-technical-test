@@ -107,6 +107,8 @@
       <path value="$PROJECT_DIR$/symfony/vendor/psr/log" />
       <path value="$PROJECT_DIR$/symfony/vendor/psr/link" />
       <path value="$PROJECT_DIR$/symfony/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/symfony/vendor/symfony/templating" />
+      <path value="$PROJECT_DIR$/symfony/vendor/friendsofsymfony/user-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

@@ -24,6 +24,7 @@
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/easycorp/easy-log-handler" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/egulias/email-validator" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/fig/link-util" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/friendsofsymfony/user-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/jdorn/sql-formatter" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/nikic/php-parser" />
@@ -93,6 +94,7 @@
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/symfony/service-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/symfony/stopwatch" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/symfony/swiftmailer-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/symfony/templating" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/symfony/test-pack" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/symfony/translation" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/symfony/translation-contracts" />
