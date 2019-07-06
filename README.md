@@ -4,7 +4,7 @@
 
 ### Tâche
 
-Le sujet de base est simple : il faut créer un site permettant la gestion de sorties de courses à pied.
+Le sujet de base est simple : il faut créer un site permettant la gestion de sorties de courses à pied. **DONE**
 
 Une sortie de course à pied est définie comme ceci :
 * Utilisateur
@@ -15,21 +15,21 @@ Une sortie de course à pied est définie comme ceci :
 * Commentaire
 
 Lors de la création ou modification d'une sortie, il faut calculer et enregistrer :
-* la vitesse moyenne (en km/h, 11.1km/h par exemple, on pourra donc enregistrer "11.1")
-* l'allure moyenne (en min/km, 5'24" par exemple, on pourra donc enregistrer "324")
+* la vitesse moyenne (en km/h, 11.1km/h par exemple, on pourra donc enregistrer "11.1") **DONE**
+* l'allure moyenne (en min/km, 5'24" par exemple, on pourra donc enregistrer "324") **DONE**
 
 
-Le site doit être sécurisé. Une authentification via http basic auth sur un provider in memory est amplement suffisante. 
+Le site doit être sécurisé. Une authentification via http basic auth sur un provider in memory est amplement suffisante. **DONE** 
 
 Une fois l'utilisateur connecté, différents **écrans** doivent permettre de :
-* lister les sorties (affichage des principales informations dont la vitesse moyenne et l'allure moyenne)
-* ajouter / modifier une sortie
-* supprimer une sortie
+* lister les sorties (affichage des principales informations dont la vitesse moyenne et l'allure moyenne) **DONE**
+* ajouter / modifier une sortie **DONE**
+* supprimer une sortie **DONE**
 
 Une **API** doit être mise à disposition. Cette **API ne doit pas être sécurisée**. Par le biais de cette API, il doit être possible de :
-* lister toutes les sorties
-* lister les sorties d'un utilisateur
-* récupérer le détail d'une sortie
+* lister toutes les sorties **DONE**
+* lister les sorties d'un utilisateur **DONE**
+* récupérer le détail d'une sortie **DONE**
 
 
 ### Les Pré-requis
@@ -57,7 +57,7 @@ Toutes les fonctionnalités que vous aurez le temps d'ajouter seront bonnes à p
 
 Voici quelques idées (liste non ordonnée) :
 
-* Ecran : permettre la gestion des types de sorties (lister, ajouter, modifier, supprimer)
+* Ecran : permettre la gestion des types de sorties (lister **DONE**, ajouter **DONE**, modifier, supprimer) 
 * Ecran : permettre à l'utilsiateur de lister ses records (1km, 5km, 10km) :
 
 Pour le calcul du record, on admet que l'utilisateur court de manière très régulière
@@ -71,9 +71,9 @@ Exemple : sortie de 2h pour 20km, les records de l'utilisateur **pour cette sort
 Reste donc à calculer les meilleurs temps pour chaque distance et chaque utilisateur.
 
 
-* API : liste des activités d'un type de sortie
-* API : liste des activités d'un type de sortie et d'un utilisateur
-* API : liste des types de sorties disponibles (dépend du bonus de gestion des types)
+* API : liste des activités d'un type de sortie **DONE**
+* API : liste des activités d'un type de sortie et d'un utilisateur **DONE**
+* API : liste des types de sorties disponibles (dépend du bonus de gestion des types) **DONE**
 * API : liste des records (dépend du bonus sur le calcul des records)
 * API : liste des records pour un utilisateur (dépend du bonus sur le calcul des records)
 * API : Sécuriser
@@ -95,3 +95,4 @@ TIME :
 - 30 min install env
 - 30 min install FOSUserBundle
 - 2h add all entities, routes, actions, etc.
+- 45 min add API actions 
