@@ -4,32 +4,50 @@ namespace App\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
-use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
- * @ORM\Table(name="fos_user")
+ * @ORM\Entity(repositoryClass="App\Repository\ExitTypeRepository")
  */
-class User extends BaseUser
+class ExitType
 {
     /**
-     * @ORM\Id
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
      */
-    protected $id;
+    private $id;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\RunningOuting", mappedBy="user")
+     * @ORM\Column(type="string", length=255, unique=true)
+     */
+    private $type;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\RunningOuting", mappedBy="exitType")
      */
     private $runningOutings;
 
     public function __construct()
     {
-        parent::__construct();
         $this->runningOutings = new ArrayCollection();
-        // your own logic
+    }
+
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getType(): ?string
+    {
+        return $this->type;
+    }
+
+    public function setType(string $type): self
+    {
+        $this->type = $type;
+
+        return $this;
     }
 
     /**
@@ -44,7 +62,7 @@ class User extends BaseUser
     {
         if (!$this->runningOutings->contains($runningOuting)) {
             $this->runningOutings[] = $runningOuting;
-            $runningOuting->setUser($this);
+            $runningOuting->setExitType($this);
         }
 
         return $this;
@@ -55,8 +73,8 @@ class User extends BaseUser
         if ($this->runningOutings->contains($runningOuting)) {
             $this->runningOutings->removeElement($runningOuting);
             // set the owning side to null (unless already changed)
-            if ($runningOuting->getUser() === $this) {
-                $runningOuting->setUser(null);
+            if ($runningOuting->getExitType() === $this) {
+                $runningOuting->setExitType(null);
             }
         }
 

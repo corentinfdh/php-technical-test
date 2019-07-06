@@ -32,3 +32,10 @@ services:
     volumes:
       - ./logs/nginx:/var/log/nginx:cached
       - ./symfony:/var/www/symfony:cached
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - db:db
+    ports:
+      - "9001:80"

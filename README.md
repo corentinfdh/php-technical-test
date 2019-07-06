@@ -94,3 +94,4 @@ Bonne chance !
 TIME :
 - 30 min install env
 - 30 min install FOSUserBundle
+- 2h add all entities, routes, actions, etc.

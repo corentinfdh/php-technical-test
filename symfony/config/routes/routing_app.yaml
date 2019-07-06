@@ -1,3 +1,23 @@
 app_home:
     path: /
     controller: App\Controller\HomeController::index
+
+app_exit_type_add:
+    path: /type/create
+    controller: App\Controller\ExitTypeController::create
+
+app_running_outing_list:
+    path: /runningOuting/list
+    controller: App\Controller\RunningOutingController::list
+
+app_running_outing_add:
+    path: /runningOuting/add
+    controller: App\Controller\RunningOutingController::create
+
+app_running_outing_update:
+    path: /runningOuting/update/{id}
+    controller: App\Controller\RunningOutingController::update
+
+app_running_outing_delete:
+    path: /runningOuting/delete/{id}
+    controller: App\Controller\RunningOutingController::delete

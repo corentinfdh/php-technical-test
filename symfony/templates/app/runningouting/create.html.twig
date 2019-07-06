@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div >
+            {{ form_start(form) }}
+            {{ form_row(form.exitType) }}
+            <br>
+            {{ form_row(form.date) }}
+            <br>
+            {{ form_row(form.duration) }}
+            <br>
+            {{ form_row(form.distance) }}
+            <br>
+            {{ form_row(form.comment) }}
+            <br>
+            <button type="submit">Submit running outing</button>
+            {{ form_end(form) }}
+
+            <br><br>
+
+            <a href="{{ path('app_home') }}">homepage</a>
+    </div>
+{% endblock %}

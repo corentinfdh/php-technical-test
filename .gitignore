@@ -1,2 +1,4 @@
 symfony/var/*
 symfony/vendor/*
+logs/
+.idea

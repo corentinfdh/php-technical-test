@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% if runningOutings is empty %}
+        <span>No running added</span>
+    {% else %}
+        <div>
+            <table>
+                <thead>
+                <tr>
+                    <th>Exit type</th>
+                    <th>Date / hour</th>
+                    <th>Duration</th>
+                    <th>Distance</th>
+                    <th>Comment</th>
+                    <th>Average speed</th>
+                    <th>Average pace</th>
+                </tr>
+                </thead>
+                <tbody>
+                    {% for runningOuting in runningOutings %}
+                        <tr>
+                            <td>{{ runningOuting.exitType.type }}</td>
+                            <td>{{ runningOuting.date|date('d/m/Y H:i:s') }}</td>
+                            <td>{{ runningOuting.duration|date('H:i:s') }}</td>
+                            <td>{{ runningOuting.distance }} km</td>
+                            <td>{{ runningOuting.comment }}</td>
+                            <td>{{ runningOuting.averageSpeed }} km/h</td>
+                            <td>{{ runningOuting.averagePace }} min/km</td>
+                            <td><a href="{{ path('app_running_outing_update', {'id': runningOuting.id}) }}">edit</a></td>
+                            <td><a href="{{ path('app_running_outing_delete', {'id': runningOuting.id}) }}">delete</a></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% endif %}
+
+    <br><br>
+
+    <a href="{{ path('app_home') }}">homepage</a>
+{% endblock %}

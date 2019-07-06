@@ -1,6 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    {% for msg in app.session.flashBag.get('success') %}
+        <div class="alert alert-success">
+            {{ msg }}
+        </div>
+        <br><br>
+    {% endfor %}
+
     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
         {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
         <a href="{{ path('fos_user_security_logout') }}">
@@ -14,7 +21,16 @@
 
     <br><br>
 
-    <div>
-        coucou
-    </div>
+    {% if is_granted("ROLE_SUPER_ADMIN") %}
+        <a href="{{ path('app_exit_type_add') }}">Create exit type</a>
+        <br><br>
+    {% endif %}
+
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        <a href="{{ path('app_running_outing_list') }}">List my running outings</a>
+        <br><br>
+        <a href="{{ path('app_running_outing_add') }}">Add running outing</a>
+        <br><br>
+
+    {% endif %}
 {% endblock %}
