@@ -109,6 +109,25 @@
       <path value="$PROJECT_DIR$/symfony/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/templating" />
       <path value="$PROJECT_DIR$/symfony/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/symfony/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/symfony/vendor/willdurand/jsonp-callback-validator" />
+      <path value="$PROJECT_DIR$/symfony/vendor/jms/serializer" />
+      <path value="$PROJECT_DIR$/symfony/vendor/jms/serializer-bundle" />
+      <path value="$PROJECT_DIR$/symfony/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/symfony/vendor/hoa/compiler" />
+      <path value="$PROJECT_DIR$/symfony/vendor/hoa/event" />
+      <path value="$PROJECT_DIR$/symfony/vendor/hoa/visitor" />
+      <path value="$PROJECT_DIR$/symfony/vendor/hoa/math" />
+      <path value="$PROJECT_DIR$/symfony/vendor/hoa/stream" />
+      <path value="$PROJECT_DIR$/symfony/vendor/hoa/file" />
+      <path value="$PROJECT_DIR$/symfony/vendor/hoa/iterator" />
+      <path value="$PROJECT_DIR$/symfony/vendor/hoa/regex" />
+      <path value="$PROJECT_DIR$/symfony/vendor/hoa/protocol" />
+      <path value="$PROJECT_DIR$/symfony/vendor/hoa/consistency" />
+      <path value="$PROJECT_DIR$/symfony/vendor/hoa/zformat" />
+      <path value="$PROJECT_DIR$/symfony/vendor/hoa/ustring" />
+      <path value="$PROJECT_DIR$/symfony/vendor/hoa/exception" />
+      <path value="$PROJECT_DIR$/symfony/vendor/friendsofsymfony/rest-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
