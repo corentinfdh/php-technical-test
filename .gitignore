@@ -1,4 +1,5 @@
-symfony/var/*
+/symfony/var/*
 symfony/vendor/*
 logs/
 .idea
+/symfony/node_modules/
